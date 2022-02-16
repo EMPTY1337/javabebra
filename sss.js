@@ -23,3 +23,12 @@ for(let i = 0; i < n; i++) {
 }
 
 }
+function summ() {
+let n = parseInt(document.getElementById('a').value)
+let s = 0
+for(let i = 0; i < n; i++) {
+	s += arr[i]
+	}
+	let div = document.getElementById('mes')
+	div.innerHTML = 'Сумма элементов = ' + s
+}
