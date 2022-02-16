@@ -1,17 +1,12 @@
-function show() {
-let a = parseInt(document.getElementById('a').value)
+let arr = []
+function generate() {
+	let n = parseInt(document.getElementById('a').value)
+	for (let i = 0; i < n; i++) {
+		arr[i] = Math.floor(Math.random()*10)
+	}
 let div = document.getElementById('mes')
-if(a < 10) {
-div.innerHTML="<h1>Bbl pe6eHok</h1>"
+for(let i = 0; i < n; i++) {
+	div.innerHTML += arr[i] + ' '
 }
-else if (a < 17) {
-div.innerHTML='<h1>Bbl ghoul</h1>'
-}
-else if (a < 65) {
-div.innerHTML='<h1> Bbl ded inside</h1>'
-}
-else {
-	div.innerHTML='<h1>Bbl cTapblu</h1>'
 }
 
-}
