@@ -1,34 +1,34 @@
-let arr = []
-function generate() {
-	let n = parseInt(document.getElementById('a').value)
-	for (let i = 0; i < n; i++) {
-		arr[i] = Math.floor(Math.random()*10)
-	}
-	print()
+let students = [
+{'id': 1,'name': 'Дима', 'surname': 'а' },
+{'id': 2,'name': 'Олег', 'surname': 'п' },
+{'id': 3,'name': 'Данил', 'surname': 'р' },
+{'id': 4,'name': 'Платина', 'surname': 'Ф' }
+
+]
+let current = 0
+
+function load_student(id){
+	document.getElementById('name').value = students[id].name
+	document.getElementById('surname').value = students[id].surname
 }
 
-function zerofill() {
-let n = parseInt(document.getElementById('a').value)
-for(let i = 0; i < n; i++) {
-	arr[i] = 0
-	}
-	print()
+function next(){
+if (current < students.length){
+	load_student(current)
+	current++
+	console.log(current)
 }
-function print(){
-let n = parseInt(document.getElementById('a').value)
-let div = document.getElementById('mes')
-div.innerHTML = ''
-for(let i = 0; i < n; i++) {
-	div.innerHTML += arr[i] + ' '
+if  (current === students.length){
+	document.getElementById('btn_next').disabled = true
 }
-
 }
-function summ() {
-let n = parseInt(document.getElementById('a').value)
-let s = 0
-for(let i = 0; i < n; i++) {
-	s += arr[i]
-	}
-	let div = document.getElementById('mes')
-	div.innerHTML = 'Сумма элементов = ' + s
+function previous(){
+if (current < students.length){
+	current--
+	load_student(current)
+	console.log(current)
+}
+if  (current === 0){
+	document.getElementById('btn_prev').disabled = true
+}
 }
