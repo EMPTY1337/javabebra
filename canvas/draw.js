@@ -1,8 +1,11 @@
 function draw(){
 	
 	 let canvas = document.getElementById('canva');
-	 let zxc = canvas.getContext('2d');
-	  zxc.fillStyle = 'pink';    
-	  zxc.fillRect(150, 75, 150, 150);
-
+	 let ctx = canvas.getContext('2d');
+	  ctx.beginPath();
+	  ctx.moveTo(250,120);
+      ctx.lineTo(50,100);
+      ctx.lineTo(150,50);
+      ctx.lineTo(250,120);
+       ctx.fill();
 	}
