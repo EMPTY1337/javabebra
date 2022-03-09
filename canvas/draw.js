@@ -2,10 +2,12 @@ function draw(){
 	let canvas = document.getElementById('canva');
 	 let ctx = canvas.getContext('2d');
 
-   ctx.moveTo(200,100);
-// команда рисования линии с координатами конца линии
-ctx.lineTo(500,200);
-ctx.strokeStyle = "pink"; //цвет линии
-ctx.lineWidth = "10"; //толщина линии
-ctx.stroke(); // обводка линии
+   ctx.beginPath();
+ctx.strokeStyle = "red";
+ctx.lineWidth = "20";
+ctx.moveTo(100,150);
+ctx.lineTo(150,75);
+ctx.lineCap = "round";
+ctx.stroke();    
+
 	}
