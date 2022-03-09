@@ -1,6 +1,8 @@
 function draw(){
 	
 	 let canvas = document.getElementById('canva');
-	 let ctx = canvas.getContext('2d');
-	  ctx.fillRect(150, 75, 150, 150);
+	 let zxc = canvas.getContext('2d');
+	  zxc.fillStyle = 'pink';    
+	  zxc.fillRect(150, 75, 150, 150);
+
 	}
