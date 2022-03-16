@@ -1,29 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="us">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>
-	</title>
+	<meta charset="utf-8">
+	<title>jQuery UI Example Page</title>
 	<script src="jquery.js"></script>
+	<script src="jquery-ui.js"></script>
+	<link href="jquery-ui.css" href="jquery-ui.css">
 	<script src="sss.js"></script>
-	
-</head>
-<body onLoad="loadFromSite()">
-	<button id="btn_direct">Сортировать по алфавиту</button>
-	<button id="btn_reverse">Сортировать в обратном порядке</button>
-    <script>loadFromSite()</script>
-	<table id="tbl_all">
-		<thead>
-		<tr>
-		<th>ID</th>
-		<th>Имя</th>
-		<th>Фамилия</th>
-		<th></th>
-		</tr>
-	    </thead>
-	    <tbody></tbody>
-	</table>
-	<div id="info"></div>
+	<link href="jquery-ui.css" href="styles.css">
+	<style type="text/css"> 
+
+	#drag1
+{
+padding:15px;
+border-style:solid;
+border-width:1px;
+width:130px;
+height:100px;
+}
+#drag2
+{
+padding:25px;
+border-style:solid;
+border-width:2px;
+width:100px;
+height:130px;
+}
+</style>	
+	<body>
+	<div id='drag1'>move</div>
+	<div id='drag2'>move1</div>
+
 </body>
 </html>
