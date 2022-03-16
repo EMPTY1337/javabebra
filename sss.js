@@ -1,4 +1,5 @@
 $(document).ready(function() {
-   $("#drag1").draggable();
-   $("#drag2").draggable();
+   $("#el1").draggable();
+   $("#el1").resizable();
 })
+   
